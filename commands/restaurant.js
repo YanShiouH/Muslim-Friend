@@ -24,9 +24,14 @@ export default async () => {
       'https://eng.taiwan.net.tw/m1.aspx?sNo=0020323&page=19'
     ]
     const restaurants = []
-    for (const website of websites) {
-      const { data } = await axios.get(website)
-      const $ = cheerio.load(data)
+
+    const requests = websites.map(website => {
+      return axios.get(website)
+    })
+
+    const results = await Promise.all(requests)
+    for (const result of results) {
+      const $ = cheerio.load(result.data)
       $('tbody').each((index, element) => {
         const restaurant = {}
         restaurant.name = $(element).find('.name').text().trim()
