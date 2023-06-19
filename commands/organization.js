@@ -12,9 +12,13 @@ export default async () => {
       'https://eng.taiwan.net.tw/m1.aspx?sNo=0022187&page=8'
     ]
     const organizations = []
-    for (const website of websites) {
-      const { data } = await axios.get(website)
-      const $ = cheerio.load(data)
+    const requests = websites.map(website => {
+      return axios.get(website)
+    })
+    const results = await Promise.all(requests)
+    for (const result of results) {
+      // const { data } = await axios.get(website)
+      const $ = cheerio.load(result.data)
       $('tbody').each((index, element) => {
         const organization = {}
         organization.name = $(element).find('.name').text().trim()
