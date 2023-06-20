@@ -45,7 +45,7 @@ export default async () => {
         const coordinates = restaurant.addressLink.match(/daddr=([-0-9.]+),([-0-9.]+)/)
         restaurant.latitude = coordinates ? parseFloat(coordinates[1]) : null
         restaurant.longitude = coordinates ? parseFloat(coordinates[2]) : null
-        if ((!restaurant.type.includes('Accommodation'))||(!restaurant.type.includes('Accomodation'))) {
+        if (!restaurant.type.includes('Accommodation') && !restaurant.type.includes('Accomodation')) {
           restaurants.push(restaurant)
         }
       })
