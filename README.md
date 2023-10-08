@@ -1,8 +1,14 @@
 # Muslim-Friend
+
+- Public Data Source: [Tourism Administration, Republic of China (Taiwan)](https://eng.taiwan.net.tw/m1.aspx?sNo=0020308)
+- Usage Instructions:
+  - ***Important Note: This service is exclusively intended for users currently located in Taiwan. If you are not in Taiwan, we regret to inform you that this service may not be available to you.***
+  - To get started, scan the QR code provided or search for the provided ID in LINE.
+  - After scanning, make sure to add "Muslim-Friend" as a friend on LINE.
+  - Users can share their location information and receive the next prayer time as a response.
+  - By clicking the "Mosque" option in the menu, users can get information about mosques located in their current city or county.
+  - Selecting the "Muslim-friendly Environment" option will provide information about the five nearest Muslim-friendly facilities, with the option to click on the address in the Flex template message to open Google Maps.
+  - Choosing the "Dining" option will provide information about the five nearest Halal-certified restaurants, with the option to click on the address in the Flex template message to open Google Maps.
 - ID: @496nutzg
-- 公開資料來源: [交通部觀光局](https://www.taiwan.net.tw/m1.aspx?sNo=0020023)
-- 使用說明: 
-  - 使用者分享位置資訊，回覆下一次禱告時間
-  - 點選圖文選單Mosque，回覆使用者所在縣市之清真寺位置資訊
-  - 點選圖文選單Muslim-friendly Environment，回覆距離使用者最近之前五項穆斯林友善設施，點選Flex彈性樣板訊息之地址可開啟Google Map
-  - 點選圖文選單Dining，回覆距離使用者最近之前五項清真認證餐廳資訊，點選Flex彈性樣板訊息之地址可開啟Google Map
+
+  ![image](https://github.com/yan-s-h/Muslim-Friend/assets/127477303/58cf1a24-a9cf-4883-b194-08480e148730)
